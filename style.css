@@ -1,0 +1,388 @@
+::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-image: url(image/body_background.jpg);
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000;
+  background: rgb(0, 0, 0) url(image/body_background.jpg) center top no-repeat;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* ========CONTAINER================================== */
+._container {
+  max-width: 1260px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  ._container {
+    max-width: 904px;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  ._container {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* ============================================ */
+
+/* ===========HEADER============================ */
+
+.header-mobile {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .header-mobile {
+    display: block;
+  }
+}
+
+.header-mobile{
+  height: 90px;
+}
+.header-mobile__container {
+  width: 100%;
+  background-color: #1f2428;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+}
+
+.header-mobile__burger {
+  background: url(image/header-mobile__burger.png) center no-repeat;
+  width: 91px;
+  height: 90px;
+}
+
+.header-mobile__logo {
+  background: url(image/header-mobile__logo.png) center no-repeat;
+  width: 80%;
+  height: 90px;
+  background-size: contain;
+
+}
+
+.header-mobile__man {
+  background: url(image/header-mobile__man.png) center no-repeat;
+  width: 91px;
+  height: 90px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+@media screen and (max-width: 720px) {
+  .header__container {
+    display: none;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__link {
+  font-family: "Plumb";
+  font: 14px/30px "Plumb";
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  position: relative;
+  padding-right: 20px;
+}
+
+.menu__link-enter {
+  padding: 0;
+}
+.menu__link:not(:last-child) {
+  margin: 0px 20px 0px 0px;
+}
+
+.menu__link-first-img::after {
+  content: "";
+  width: 16px;
+  height: 24px;
+  background: url(image/header_menu_ico.png) top left no-repeat;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.menu__link-second-img::after {
+  content: "";
+  width: 18px;
+  height: 24px;
+  background: url(image/header_menu_ico.png) top center no-repeat;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.menu__link-third-img::after {
+  content: "";
+  width: 19px;
+  height: 24px;
+  background: url(image/header_menu_ico.png) top right no-repeat;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: -2px;
+}
+
+.header__logo {
+  position: relative;
+  padding: 0px 0px 45px 0px;
+}
+
+.header__logotip {
+  margin: 35px 0px 0px 0px;
+}
+
+.header__link {
+  display: block;
+  max-width: 317px;
+  width: 100%;
+  background-color: #ff0000;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  color: white;
+  font: bold 16px/58px "Quantico", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .header__link {
+    max-width: 25.2%;
+  }
+}
+
+.header__link:hover {
+  background-color: white;
+  color: #000;
+}
+/* ====MAIN============================================ */
+
+.main__menu {
+  max-height: 58px;
+}
+
+@media screen and (max-width: 720px) {
+  .main__menu {
+    display: none;
+  }
+}
+
+.main__list {
+  width: 100%;
+  display: flex;
+}
+
+.main__item:first-child {
+  flex-grow: 0;
+}
+
+.main__item:last-child {
+  flex-grow: 0;
+}
+
+.main__item:nth-last-child(2) {
+  max-width: 100%;
+  flex-grow: 0;
+  width: 25%;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.main__item {
+  position: relative;
+  flex-grow: 1;
+  width: auto;
+  height: 100%;
+  max-width: 204px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .main__item {
+    width: 0;
+  }
+}
+
+.main__text {
+  font-size: 18px;
+  font: bold 16px/58px "Quantico", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main__item:not(:nth-child(7)):before {
+  content: "";
+  width: 1px;
+  height: 29px;
+  background-color: red;
+  display: block;
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+}
+
+.main__item:nth-child(2):before {
+  width: 0;
+}
+
+.main__item:nth-child(1):before {
+  width: 0;
+}
+
+.main__item:nth-child(8):before {
+  width: 0;
+}
+
+.main__link {
+  padding: 0px 12px 0px 24px;
+  line-height: 58px;
+  display: block;
+  white-space: nowrap;
+  background-color: black;
+}
+
+.submenu__link {
+  font-size: 17px;
+  display: block;
+  padding: 0px 12px 0px 24px;
+  color: white;
+  line-height: 38px;
+}
+
+@media screen and (max-width: 1300px) {
+  .submenu {
+    width: 200px;
+  }
+}
+
+.main__link:hover {
+  background-color: white;
+  color: black;
+}
+
+.main__link-icon::after {
+  content: "";
+  width: 13px;
+  height: 11px;
+  position: absolute;
+  right: 15px;
+  top: 45%;
+  background: url(image/menu_array.png);
+}
+
+.submenu__item {
+  background-color: black;
+  margin: 0px 0px 1px 0px;
+}
+
+.submenu__item:last-child {
+  margin: 0;
+}
+
+.main__item > ul {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.main__item:hover > ul {
+  max-height: 100vh;
+  transition: 0.3s ease-in;
+}
+
+.main__submenu > li:hover {
+  background: white;
+}
+
+.main__submenu > li a:hover {
+  color: black;
+}
