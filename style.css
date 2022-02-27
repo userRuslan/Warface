@@ -77,7 +77,6 @@ body {
 
 .wrapper {
   min-height: 100%;
-  overflow: hidden;
 }
 
 /* ========CONTAINER================================== */
@@ -112,7 +111,7 @@ body {
   }
 }
 
-.header-mobile{
+.header-mobile {
   height: 90px;
 }
 .header-mobile__container {
@@ -134,7 +133,6 @@ body {
   width: 80%;
   height: 90px;
   background-size: contain;
-
 }
 
 .header-mobile__man {
@@ -247,6 +245,9 @@ body {
 
 .main__menu {
   max-height: 58px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 @media screen and (max-width: 720px) {
