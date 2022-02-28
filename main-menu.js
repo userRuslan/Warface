@@ -21,8 +21,3 @@ document.addEventListener("scroll", function () {
     cube.classList.remove("scroll");
   }
 });
-
-cube.addEventListener("click", function (event) {
-  if (event.target != cubeBottom) return;
-  alert("hi");
-});
