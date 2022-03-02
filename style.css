@@ -325,6 +325,13 @@ body {
 
 .main__item:last-child {
   flex-grow: 0;
+  width: 0;
+  background: url(image/main-logotip.png);
+}
+
+.main__item:last-child.run {
+  width: 56px;
+  height: inherit;
 }
 
 .main__item:nth-last-child(2) {
@@ -333,6 +340,11 @@ body {
   width: 25%;
   text-align: center;
   border: 1px solid red;
+  transition: width 300ms ease;
+}
+
+.main__item:nth-last-child(2).run {
+  width: 20.36%;
 }
 
 .main__item {
