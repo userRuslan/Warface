@@ -21,8 +21,10 @@ document.addEventListener("scroll", function () {
   if (window.pageYOffset > coords.top + mainMenu.offsetTop) {
     cube.classList.add("scroll");
     mainBigElem.classList.add("run");
+    mainLogotip.classList.add("run");
   } else if (window.pageYOffset < window.pageYOffset + coords.top) {
     cube.classList.remove("scroll");
     mainBigElem.classList.remove("run");
+    mainLogotip.classList.remove("run");
   }
 });

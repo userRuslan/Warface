@@ -16,8 +16,6 @@
   max-height: 440px;
 }
 
-
-
 .information-table__right-mobile {
   display: none;
 }
@@ -103,7 +101,12 @@
   bottom: 10px;
   right: 15px;
   display: flex;
-  transform: translate();
+}
+
+@media screen and (max-width: 720px) {
+  .slider-dots{
+    display: none;
+  }
 }
 
 .slider-dot {

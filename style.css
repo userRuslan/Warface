@@ -325,13 +325,24 @@ body {
 
 .main__item:last-child {
   flex-grow: 0;
-  width: 0;
-  background: url(image/main-logotip.png);
+  width: 56px;
+  background: red
+    url(https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/page/details/profile_ico.png)
+    center 10px no-repeat;
+  transition: margin-right 300ms ease;
+  height: inherit;
+  margin-right: -56px;
+  max-height: 59px;
 }
 
 .main__item:last-child.run {
-  width: 56px;
-  height: inherit;
+  margin-right: 0;
+}
+
+.main__item:last-child:hover{
+  background: white
+    url(https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/page/details/profile_ico.png)
+    center 10px no-repeat;
 }
 
 .main__item:nth-last-child(2) {
@@ -401,6 +412,12 @@ body {
   display: block;
   white-space: nowrap;
   background-color: black;
+}
+
+@media screen and (max-width: 1300px) {
+  .main__link{
+    padding: 0px 12px 0px 10px;
+  }
 }
 
 .submenu__link {
