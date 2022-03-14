@@ -1,10 +1,11 @@
 .news-block {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .news-block__inform {
-  width: 75%;
+  width: 100%;
   box-sizing: border-box;
   padding: 0px 32px;
   display: flex;

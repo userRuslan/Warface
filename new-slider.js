@@ -117,7 +117,6 @@ const slidersWallpaper = document.querySelectorAll(
 );
 
 const sliderLinearWallpaper = document.querySelector(".slider-line__wallpaper");
-console.log(sliderLinearWallpaper.clientWidth);
 
 wallpaperContainer.addEventListener("mouseover", function () {
   leftArrowWallpaper.style.left = 0;

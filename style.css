@@ -337,9 +337,10 @@ body {
 
 .main__item:last-child.run {
   margin-right: 0;
+  margin-left: 0.5px;
 }
 
-.main__item:last-child:hover{
+.main__item:last-child:hover {
   background: white
     url(https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/page/details/profile_ico.png)
     center 10px no-repeat;
@@ -415,7 +416,7 @@ body {
 }
 
 @media screen and (max-width: 1300px) {
-  .main__link{
+  .main__link {
     padding: 0px 12px 0px 10px;
   }
 }
