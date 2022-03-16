@@ -28,3 +28,7 @@ document.addEventListener("scroll", function () {
     mainLogotip.classList.remove("run");
   }
 });
+
+cube.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
