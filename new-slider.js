@@ -3,6 +3,9 @@ const leftArrow = document.querySelector(".information-arrows__prev");
 const rightArrow = document.querySelector(".information-arrows__next");
 const videoContainer = document.querySelector(".courosel-video");
 const sliders = document.querySelectorAll(".slider-line__item");
+const iframeClosed = document.querySelector(".slider-iframe__closed");
+const iframeContainer = document.querySelector(".slider-iframe");
+const iframeContent = document.querySelector(".slider-iframe-content");
 
 let positions = 0;
 
@@ -177,4 +180,23 @@ sliderButtons.forEach((item, index) => {
     });
     fullSliders[index].classList.add("activeSliders");
   });
+});
+
+// ==============================================================================
+
+let iframe = null;
+
+sliders.forEach((item) => {
+  item.addEventListener("click", function () {
+    iframeContainer.style.display = "block";
+    iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube.com/embed/2co5K5Z3EWA?rel=0&autoplay=0";
+    iframe.className = "slider-iframe-content";
+    iframeContent.append(iframe);
+  });
+});
+
+iframeClosed.addEventListener("click", function () {
+  iframeContainer.style.display = "none";
+  iframe.remove();
 });
