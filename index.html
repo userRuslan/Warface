@@ -9,6 +9,8 @@
     <link href="slider.css" rel="stylesheet" />
     <link href="news-block.css" rel="stylesheet" />
     <link href="notice.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="burgerMenu.css" rel="stylesheet" />
     <title>WarFace</title>
   </head>
   <body>
@@ -130,6 +132,45 @@
               <li class="main__item"></li>
             </ul>
           </div>
+          <div class="main__mobile-menu">
+            <ul class="mobile-menu__menu">
+              <li class="mobile-menu__link"><a href="">Мои предметы</a></li>
+              <li class="mobile-menu__link">
+                <a href="">Активировать пин-код</a>
+              </li>
+              <li class="mobile-menu__link"><a href="">Помощь</a></li>
+              <li class="mobile-menu__link"><a href="">Новости</a></li>
+              <li class="mobile-menu__link mobile-menu__arrow">
+                <a class="mobile-menu__ln">Об игре</a>
+                <ul class="mobile-menu__submenu">
+                  <li>Игромаркет</li>
+                  <li>Новому игроку</li>
+                  <li>Медиа</li>
+                  <li>Рейтинги</li>
+                </ul>
+              </li>
+              <li class="mobile-menu__link mobile-menu__arrow">
+                <a class="mobile-menu__ln">Esports</a>
+                <ul class="mobile-menu__submenu">
+                  <li>Clans Brawl</li>
+                  <li>WarFace pro</li>
+                  <li>Биржа</li>
+                  <li>Все турниры</li>
+                </ul>
+              </li>
+              <li class="mobile-menu__link mobile-menu__arrow">
+                <a class="mobile-menu__ln">Общение</a>
+                <ul class="mobile-menu__submenu">
+                  <li>Форум</li>
+                  <li>Социальные сети</li>
+                  <li>Клан</li>
+                </ul>
+              </li>
+              <li class="mobile-menu__link"><a href="">Wiki</a></li>
+              <li class="mobile-menu__link"><a href="">Пополнить счет</a></li>
+            </ul>
+          </div>
+          <div class="mobile-window"></div>
         </div>
         <div class="main-container _container">
           <section class="information-table">
@@ -333,6 +374,7 @@
                   <a class="content-block__aside-button">Программа бонусов</a>
                   <a class="content-block__aside-button">Подписка</a>
                   <a class="content-block__aside-button">Комментарии</a>
+                  <a class="content-block__aside-button">Eще сервисы</a>
                 </div>
 
                 <div class="content-block__aside-link">
@@ -598,7 +640,11 @@
                 <a class="news-item__link news-text" href="#">Будь с нами</a>
               </div>
               <div class="information-notice__bottom-image-block">
-                <a class="information-notice__bottom-image vk" href="https://vk.com/girlwithagoal" target="_blank"></a>
+                <a
+                  class="information-notice__bottom-image vk"
+                  href="https://vk.com/girlwithagoal"
+                  target="_blank"
+                ></a>
                 <a class="information-notice__bottom-image es" href=""></a>
                 <a class="information-notice__bottom-image tk" href=""></a>
                 <a class="information-notice__bottom-image in" href=""></a>
@@ -611,10 +657,74 @@
           </section>
         </div>
       </main>
+      <footer>
+        <div class="footer-container _container">
+          <div class="footer-body">
+            <div class="footer__list-container">
+              <ul class="footer-menu">
+                <li class="footer__list footer-text">
+                  <a class="footer-link">Новости</a>
+                </li>
+                <li class="footer__list footer-text">
+                  <a class="footer-link">Об игре</a>
+                  <ul class="footer-submenu">
+                    <li class="footer-submenu__list">Скачать игру</li>
+                    <li class="footer-submenu__list">Новому игроку</li>
+                    <li class="footer-submenu__list">Игромаркет</li>
+                    <li class="footer-submenu__list">Медиа</li>
+                  </ul>
+                </li>
+                <li class="footer__list footer-text">
+                  <a class="footer-link">Esports</a>
+                  <ul class="footer-submenu">
+                    <li class="footer-submenu__list">Warface PRO</li>
+                    <li class="footer-submenu__list">Биржа</li>
+                    <li class="footer-submenu__list">Все турнири</li>
+                  </ul>
+                </li>
+                <li class="footer__list footer-text">
+                  <a class="footer-link">Общение</a>
+                  <ul class="footer-submenu">
+                    <li class="footer-submenu__list">Форум</li>
+                    <li class="footer-submenu__list">Социальные сети</li>
+                  </ul>
+                </li>
+                <li class="footer__list footer-text">
+                  <a class="footer-link">Wiki</a>
+                  <ul class="footer-submenu">
+                    <li class="footer-submenu__list">Помощь</li>
+                    <li class="footer-submenu__list">Документы</li>
+                    <li class="footer-submenu__list">Комментарии</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__logoes-container">
+              <div class="footer__logoes">
+                <a class="footer__logo" href="#">
+                  <img src="image/footer-logo_1.png" />
+                </a>
+                <a class="footer__logo" href="#">
+                  <img src="image/footer-logo_2.png" />
+                </a>
+                <a class="footer__logo" href="#">
+                  <img src="image/footer-logo_3.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer__bottom-img">
+              <img src="image/footer-bottom-logo.png" />
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="script.js"></script>
     <script src="aside.js"></script>
     <script src="main-menu.js"></script>
     <script src="new-slider.js"></script>
+    <script src="burger-menu.js"></script>
   </body>
 </html>

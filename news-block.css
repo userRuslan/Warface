@@ -340,6 +340,18 @@
   box-sizing: border-box;
 }
 
+.content-block__aside-button:last-child {
+  background-color: red;
+  border-color: red;
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .content-block__aside-button:last-child {
+    display: inherit;
+  }
+}
+
 .content-block__aside-button:hover {
   background-color: white;
   color: black;
